@@ -1,0 +1,6 @@
+{
+  "name": "AAKAY Café & Kitchen",
+  "description": "Sanctuary of taste offering handcrafted single-origin coffee, artisanal dining, and serene hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

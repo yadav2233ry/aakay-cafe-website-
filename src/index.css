@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-surface: #fdf9f1;
+  --color-surface-dim: #dddad2;
+  --color-surface-bright: #fdf9f1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3eb;
+  --color-surface-container: #f1ede6;
+  --color-surface-container-high: #ece8e0;
+  --color-surface-container-highest: #e6e2da;
+  --color-on-surface: #1c1c17;
+  --color-on-surface-variant: #4f4542;
+  --color-primary: #000000;
+  --color-primary-container: #251915;
+  --color-on-primary-container: #93807a;
+  --color-secondary: #775a19;
+  --color-secondary-container: #fed488;
+  --color-on-secondary-container: #785a1a;
+  --color-secondary-fixed: #ffdea5;
+  --color-secondary-fixed-dim: #e9c176;
+  --color-tertiary-container: #2d1604;
+  --color-outline: #807571;
+  --color-outline-variant: #d2c3bf;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar styling for elegance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d2c3bf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #807571;
+}
+
